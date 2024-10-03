@@ -126,6 +126,17 @@ svg {
     animation-fill-mode: forwards;
 }
 
+#slide3 {
+    animation-name: slide3;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+
+footer {
+    transform: translateY(200px);
+    opacity: 0;
+}
+
 @keyframes slide {
     to {
         transform: translateX(0);
@@ -137,5 +148,77 @@ svg {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes slide3 {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media(max-width:450px){
+    body {
+        margin: 0 auto;
+        
+    }
+    nav {
+        display: block;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu h1 {
+        margin: 20px 27px;
+        color: orange;
+        text-shadow: 1px 2px 3px rgb(97, 68, 15);
+    }
+
+    .menu .img {
+        margin: 20px 120px;
+        width: 100px;
+        height: 50px;
+       
+    }
+
+    nav h1 {
+        justify-content: center;
+        font-family: sans-serif;
+
+    }
+
+    nav .pesquisar {
+        display: flex;
+        margin: 5px 40px;
+        border-radius: 6px;
+        font-weight: bold;
+        background-color: orange;
+        padding: 10px 6px;
+        box-shadow: 0px 0px 10px 1px rgb(209, 157, 13);
+    }
+
+    .form {
+        opacity: 0;
+    }
+
+    .bv {
+        margin: auto;
+        color: orange;
+    }
+
+    section {
+        display:  block;
+    }
+
+    footer {
+        color: white;
+        margin-top:200px;
+        text-align: center;
+        width: 10;
+        min-height: 100px;
     }
 }
